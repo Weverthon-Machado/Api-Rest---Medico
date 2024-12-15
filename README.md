@@ -13,15 +13,13 @@ Esta API permite o cadastro, consulta e exclusão de médicos. A aplicação foi
 - URL: /medicos
 - Descrição: Cadastra um novo médico no sistema.
 
-Exemplo de Requisição:
-json
-Copiar código
-{
-  "nome": "Dr. João",
-  "especialidade": "Cardiologia",
-  "crm": "12345",
-  "email": "joao@exemplo.com"
-}
+## Exemplo de Requisição:
+      {
+         "nome": "Dr. João",
+         "especialidade": "Cardiologia",
+         "crm": "12345",
+         "email": "joao@exemplo.com"
+      }
 
 ## 2. Listar Todos os Médicos
 - Método: GET
@@ -61,9 +59,9 @@ spring.datasource.password=senha
 ## Testando a API
 Recomenda-se o uso do Postman, Insomnia ou cURL para testar os endpoints.
 
-     -d '{
+        {
            "nome": "Dr. João",
            "especialidade": "Cardiologia",
            "crm": "12345",
            "email": "joao@exemplo.com"
-         }'
+         }
